@@ -23,9 +23,14 @@ public class Main {
 
     }
 
+    /**
+     * Find the maximum value in an array
+     * @param arr input array
+     * @return maximum value of array or Integer.MIN_VALUE if array is empty
+     */
     public static double findMax(double[] arr){
         if(arr.length == 0){
-            return -10000;
+            return Integer.MIN_VALUE;
         }
 
         double max = arr[0];
@@ -36,4 +41,6 @@ public class Main {
         }
         return max;
     }
+
+    //you are to complete methods for finding the min, sum, median, average
 }
